@@ -69,5 +69,5 @@ foreach ($SubscriptionId in $SubscriptionIds)
         }
     }
 
-    $Output | ConvertTo-Csv | Out-File -FilePath  "Compliance-$SubscriptionId.csv"
+    $Output | ConvertTo-Json | Out-File -FilePath  "Compliance-$SubscriptionId.json"
 }
